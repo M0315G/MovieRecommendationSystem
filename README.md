@@ -1,10 +1,68 @@
-# MovieRecommendationSystem
-Python Implementation of Movie Recommendation System from Scratch!
 
-This python implementation is about predicting the movie ratings for the movies yet not viewed by the User.
-And recommend them new movies based on their past watch history.
 
-The flow of the project is as below :
-1. Read data function : This function reads the data from the csv files movies.csv and ratings.csv into the data frames.
-Movies.csv file contains the movie titles and the movie Id.
-Ratings.csv file contains the ratings given by different users  
+Recommendation Systems have been around us since a long time. They use various different approaches to build an effective recommendation system. This project is build on the approach of collaborative filtering. This recommendation system take input the ratings given by different users on various movies and outputs the recommendation for a user based on his/her watch history as well as that of his/her like beings.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+Give examples
+```
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Authors
+
+* **Manish Gupta** - [M0315G](https://github.com/M0315G)
+* **Ishan Tewari** - [M0315G](https://github.com/M0315G)

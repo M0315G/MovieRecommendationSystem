@@ -1,66 +1,48 @@
-
+# Movie Recommendation System (from Scratch)
 
 Recommendation Systems have been around us since a long time. They use various different approaches to build an effective recommendation system. This project is build on the approach of collaborative filtering. This recommendation system take input the ratings given by different users on various movies and outputs the recommendation for a user based on his/her watch history as well as that of his/her like beings.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software
 
 ```
-Give examples
+1. Pandas package
+2. Numpy package
+3. Os package
+4. Scipy package
 ```
 
-### Installing
+### Walkhthrough of the code
 
-A step by step series of examples that tell you how to get a development env running
+To get started with the code, first install all the packages described above and download the two data files present in the GitHub Repo.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+The description of each function is given below :
+````
+read_data() : This function will read the data from the data files into the panda dataframe for future use!
+````
+````
+data_stats() : This function displays the stats for the present data. We display the frequency of ratings for each movie as well as the no of movies and users. Feel free to tweak the function to get out more stats from the data.
+````
+````
+preprocess_data() : The dataframe created in the previous function contains a large no of zeros as there are many movies which are not rated by many users. This creates an unnecessary empty space into the matrix. Thus we preprocess it to reduce the memory component using scipy.
+````
+````
+compute_cost() : This cost function.
+````
+````
+grads() : Gradient descent is performed inside this function. The specifics about it is available in the comments of the code.
+````
+````
+model() : This is the final compiled model. It calls every above function in their proper order and takes care of the hyperparameters. Run this function to get the final trained parameters.
+````
+````
+predict() : This function is used for predicting the movie ratings for users and recommending them based on their watch history.
+````
 
 ## Authors
 

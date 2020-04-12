@@ -47,4 +47,4 @@ predict() : This function is used for predicting the movie ratings for users and
 ## Authors
 
 * **Manish Gupta** - [M0315G](https://github.com/M0315G)
-* **Ishan Tewari** - [M0315G](https://github.com/M0315G)
+* **Ishan Tewari** - [Ishan-Tewari](https://github.com/Ishan-Tewari)
